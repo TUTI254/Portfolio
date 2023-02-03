@@ -8,7 +8,7 @@ function App() {
       <div className="headerContainer">
         <div className="headerTextContainer">
             <h1 className="h1">
-                <span className="hello"> Hello World. 
+                <span className="hello"> Hello World!
                 </span>
                 <span className="name"> I am Collins Tuti </span>
             </h1>
@@ -32,10 +32,12 @@ function App() {
 
     <section id="aboutContainer">
 
+        <h3 className="aboutHeaderText">
         <img src={wave} alt="wave" width={40} height={40} />
-        <h3 className="aboutHeaderText"> Who is Tuti ? </h3>
+            Get to know Who is Tuti ? 
+        </h3>
 
-        <h4>Software Engineer 
+        <h4>I am Software Engineer
         </h4>
 
         <p>I am an excellent resource to have on your team. A <span className="sp">Software
