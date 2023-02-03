@@ -1,38 +1,272 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: dimgrey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerContainer {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerContainer img {
+  height: 190%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  margin-right: 6.3em;
+}
+
+.headerTextContainer {
+  height: 10em;
+  margin-left: 9em;
+  padding-top: 10.5em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  z-index: 10;
+}
+
+.hello {
+  display: block;
+  /* color: white; */
+  font-size: 3em;
+  font-family: "Syne Mono", monospace;
+}
+
+.hello:hover {
+  transform: scale(1.15);
+  transition: 0.3s;
+}
+
+.name {
+  display: block;
+  color: wheat;
+  font-size: 2rem;
+  font-family: "Syne Mono", monospace;
+  line-height: 0.75em;
+}
+
+.name:hover {
+  transform: scale(1.15);
+  transition: 0.3s;
+}
+
+.topNavigationContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 63.5%;
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: "Syne Mono", monospace;
+}
+
+a:hover {
+  color: red;
+}
+
+li {
+  list-style: none;
+}
+
+#aboutContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20em auto 0;
+  width: 80%;
+}
+
+.aboutHeaderText {
+  font-family: "Syne Mono", monospace;
+  font-size: 2em;
+  color: wheat;
+  margin: 0;
+}
+
+#aboutContainer h4 {
+  font-family: "Syne Mono", monospace;
+  font-size: 1.5em;
+  margin: 0.8em 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#aboutContainer p {
+  font-family: "Syne Mono", monospace;
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 0.6em 0;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin: 3em auto 0;
+  width: 80%;
+}
+
+.skills h3 {
+  font-family: "Syne Mono", monospace;
+  font-size: 2em;
+  color: red;
+  margin: 0;
+}
+
+.skills p {
+  font-family: "Syne Mono", monospace;
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 0.6em 0;
+  color: white;
+}
+
+#contactContainer {
+  font-family: "Syne Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0;
+  width: 80%;
+}
+
+.contactHeaderText {
+  font-family: "Syne Mono", monospace;
+  color: red;
+  margin: 2em 0 -0.7em 0;
+  font-size: 1.5em;
+}
+
+.contactNavContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.contactNav {
+  padding-top: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.contactNav a {
+  text-decoration: none;
+  color: white;
+}
+
+.contactNav a:hover {
+  color: red;
+}
+
+.footer {
+  color: white;
+  margin: 3em auto 4em;
+  width: 80%;
+  font-size: 0.9em;
+  display: flex;
+  font-family: "Syne Mono", monospace;
+}
+
+@media screen and (max-width: 798px) {
+  .headerContainer img {
+    margin-right: unset;
+    height: 100%;
+    width: 43%;
+    top: 51px;
+    right: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .headerTextContainer {
+    margin-left: 5em;
   }
+
+  .hello {
+    font-size: 2.5em;
+  }
+
+  .name {
+    font-size: 2.5em;
+  }
+
+  #aboutContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 15em auto 0;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .headerContainer img {
+    height: 100%;
+    width: 51%;
+    object-fit: cover;
+    position: absolute;
+    top: -21px;
+    left: 44%;
+    bottom: 0;
+  }
+
+  .headerTextContainer {
+    height: unset;
+    width: auto;
+    margin-left: 0;
+    padding-left: 2.5em;
+    padding-top: 14.5em;
+    display: unset;
+    z-index: 10;
+  }
+
+  .hello {
+    font-size: 2.5em;
+    font-family: "poppins";
+    font-family: "Syne Mono", monospace;
+  }
+
+  .name {
+    font-size: 2.5em;
+    line-height: unset;
+    font-family: "poppins";
+    font-family: "Syne Mono", monospace;
+  }
+
+  .h1 {
+    line-height: 2.9em;
+  }
+
+  .topNavigationContainer {
+    width: 58%;
+    list-style: none;
+    padding-left: 4px;
+  }
+
+  #aboutContainer {
+    margin: 4em auto 0;
+  }
+
+  #contactContainer {
+    margin: -0.4em auto 0px;
+  }
+
+  .nav-list a {
+    font-size: 14px;
+    font-family: "poppins";
+    font-family: "Syne Mono", monospace;
+  }
+}
+
+.sp {
+  color: red;
+  font-weight: 900;
 }
