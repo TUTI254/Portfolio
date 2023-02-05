@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import './App.css';
 import wave from "./assets/my.gif";
 import me from "./assets/about.jpeg";
@@ -17,7 +18,8 @@ function App() {
                 <ul className="topNavigationContainer">
                     <li className="nav-list"><a href="#aboutContainer">About</a></li>
                     <li className="nav-list"><a id="portfolio"
-                            href="https://drive.google.com/file/d/1p5lglyXfWrG1Uqr05wnehktV4tdz4xCH/view?usp=sharing"
+                            // eslint-disable-next-line no-script-url
+                            href="javascript:alert('Portfolio coming soon!')"
                             target="blank">Resume</a>
                     </li>
                     <li className="nav-list"><a id="contact" href="#contactContainer">Contact</a></li>
@@ -39,18 +41,12 @@ function App() {
 
         <h4>I am Software Engineer
         </h4>
+        <p>Hi, I'm a 21-year-old software engineer from Nairobi, 🇰🇪 Kenya with a passion for <span className="sp">JavaScript</span>. I believe in the power of collaboration and am always eager to work with other engineers to create beautiful and impactful products. With my technical skills and team-focused mindset, I am confident in my ability to make a meaningful contribution to any project. Let's build something great together!  I am an excellent resource to have on your team. A <span className="sp">Software Engineer</span> with a hunger for success!</p>
 
-        <p>I am an excellent resource to have on your team. A <span className="sp">Software
-                Engineer</span> with a Product and Startup Management background. I have built multiple web applications with Javascript, React, Redux, React Query, HTML, CSS and I have good familiarity
-                with Nodejs, Express, MongoDB. </p>
-
-        <p>I have managed International Accelerator programs as a Program Manager for Facebook, Airbus, GIZ, Google for Startups,
-        EFInA and more, supporting over 60 technology startups.
+        <p>I landed my first role in tech at a startup company when i was 19 With just  a few projects under my belt on my local machine but i was ready to dive into new the tech world and show my passion for learning and engineering.
         </p>
 
-        <p>Looking to be a part of Engineering teams in Agile and Innovative Technology companies. Got any exciting
-            opportunities?
-            kindly send me an email - <span className="sp">rotimidokun@gmail.com</span>.
+        <p>I am a music lover who enjoys listening to music while coding. My hobbies include spending time with friends and family, watching anime, trying new cuisines, and following the English Premier League.
         </p>
 
     </section>
@@ -60,9 +56,9 @@ function App() {
 
         <p>
             JavaScript, HTML/CSS, Scss, React JS,
-            Redux, React Query, NodeJS, Express JS,
-            MongoDB, Git,
-            GitHub, PostgreSQL, Trello, Slack, Jira.
+            Python, React Query, NodeJS, Express JS,
+            PostgreSQL, MySQL, Git,
+            GitHub, Php, Django, Flutter, Slack, Jira.
         </p>
 
 
@@ -76,15 +72,11 @@ function App() {
 
         <ul className="contactNavContainer">
 
-            <li className="contactNav"><a href="mailto:rotimidokun@gmail.com"> rotimidokun@gmail.com </a></li>
-            <li className="contactNav"><a href="https://github.com/rotimidokun" target="blank"> GitHub
+            <li className="contactNav"><a href="collinsamwayi254@gmail.com"> collinsamwayi254@gmail.com </a></li>
+            <li className="contactNav"><a href="https://github.com/TUTI254" target="blank"> GitHub
                 </a></li>
-            <li className="contactNav"><a href="https://www.linkedin.com/in/tosin-rotimidokun/" target="blank"> LinkedIn
+            <li className="contactNav"><a href="https://www.linkedin.com/in/collins-amwayi-578a96226/" target="blank"> LinkedIn
                 </a></li>
-            <li className="contactNav"><a href="https://twitter.com/rotimidokun" target="blank"> Twitter </a></li>
-            <li className="contactNav"><a href="https://web.facebook.com/Tdoks" target="blank"> Facebook </a></li>
-            <li className="contactNav"><a href="https://www.instagram.com/rotimidokun/" target="blank"> Instagram</a>
-            </li>
 
         </ul>
 
