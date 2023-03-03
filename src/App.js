@@ -36,7 +36,7 @@ function App() {
 
         <h3 className="aboutHeaderText">
         <img src={wave} alt="wave" width={40} height={40} />
-            Get to know Who is Tuti ? 
+            Get to know Who Tuti is ? 
         </h3>
 
         <h4>I am Software Engineer
